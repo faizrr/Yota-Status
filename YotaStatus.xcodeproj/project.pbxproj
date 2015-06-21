@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		305DA9681B36A38500C1E93E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305DA9671B36A38500C1E93E /* AppDelegate.swift */; };
+		305DA96A1B36A38500C1E93E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305DA9691B36A38500C1E93E /* Images.xcassets */; };
+		305DA96D1B36A38500C1E93E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305DA96B1B36A38500C1E93E /* MainMenu.xib */; };
+		305DA9791B36A38500C1E93E /* YotaStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305DA9781B36A38500C1E93E /* YotaStatusTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		305DA9731B36A38500C1E93E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 305DA95A1B36A38500C1E93E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 305DA9611B36A38500C1E93E;
+			remoteInfo = YotaStatus;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		305DA9621B36A38500C1E93E /* YotaStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YotaStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		305DA9661B36A38500C1E93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		305DA9671B36A38500C1E93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		305DA9691B36A38500C1E93E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		305DA96C1B36A38500C1E93E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		305DA9721B36A38500C1E93E /* YotaStatusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YotaStatusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		305DA9771B36A38500C1E93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		305DA9781B36A38500C1E93E /* YotaStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YotaStatusTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		305DA95F1B36A38500C1E93E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305DA96F1B36A38500C1E93E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		305DA9591B36A38500C1E93E = {
+			isa = PBXGroup;
+			children = (
+				305DA9641B36A38500C1E93E /* YotaStatus */,
+				305DA9751B36A38500C1E93E /* YotaStatusTests */,
+				305DA9631B36A38500C1E93E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		305DA9631B36A38500C1E93E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				305DA9621B36A38500C1E93E /* YotaStatus.app */,
+				305DA9721B36A38500C1E93E /* YotaStatusTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		305DA9641B36A38500C1E93E /* YotaStatus */ = {
+			isa = PBXGroup;
+			children = (
+				305DA9671B36A38500C1E93E /* AppDelegate.swift */,
+				305DA9691B36A38500C1E93E /* Images.xcassets */,
+				305DA96B1B36A38500C1E93E /* MainMenu.xib */,
+				305DA9651B36A38500C1E93E /* Supporting Files */,
+			);
+			path = YotaStatus;
+			sourceTree = "<group>";
+		};
+		305DA9651B36A38500C1E93E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				305DA9661B36A38500C1E93E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		305DA9751B36A38500C1E93E /* YotaStatusTests */ = {
+			isa = PBXGroup;
+			children = (
+				305DA9781B36A38500C1E93E /* YotaStatusTests.swift */,
+				305DA9761B36A38500C1E93E /* Supporting Files */,
+			);
+			path = YotaStatusTests;
+			sourceTree = "<group>";
+		};
+		305DA9761B36A38500C1E93E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				305DA9771B36A38500C1E93E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		305DA9611B36A38500C1E93E /* YotaStatus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 305DA97C1B36A38500C1E93E /* Build configuration list for PBXNativeTarget "YotaStatus" */;
+			buildPhases = (
+				305DA95E1B36A38500C1E93E /* Sources */,
+				305DA95F1B36A38500C1E93E /* Frameworks */,
+				305DA9601B36A38500C1E93E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YotaStatus;
+			productName = YotaStatus;
+			productReference = 305DA9621B36A38500C1E93E /* YotaStatus.app */;
+			productType = "com.apple.product-type.application";
+		};
+		305DA9711B36A38500C1E93E /* YotaStatusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 305DA97F1B36A38500C1E93E /* Build configuration list for PBXNativeTarget "YotaStatusTests" */;
+			buildPhases = (
+				305DA96E1B36A38500C1E93E /* Sources */,
+				305DA96F1B36A38500C1E93E /* Frameworks */,
+				305DA9701B36A38500C1E93E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				305DA9741B36A38500C1E93E /* PBXTargetDependency */,
+			);
+			name = YotaStatusTests;
+			productName = YotaStatusTests;
+			productReference = 305DA9721B36A38500C1E93E /* YotaStatusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		305DA95A1B36A38500C1E93E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Roman Faizullin";
+				TargetAttributes = {
+					305DA9611B36A38500C1E93E = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					305DA9711B36A38500C1E93E = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = 305DA9611B36A38500C1E93E;
+					};
+				};
+			};
+			buildConfigurationList = 305DA95D1B36A38500C1E93E /* Build configuration list for PBXProject "YotaStatus" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 305DA9591B36A38500C1E93E;
+			productRefGroup = 305DA9631B36A38500C1E93E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				305DA9611B36A38500C1E93E /* YotaStatus */,
+				305DA9711B36A38500C1E93E /* YotaStatusTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		305DA9601B36A38500C1E93E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305DA96A1B36A38500C1E93E /* Images.xcassets in Resources */,
+				305DA96D1B36A38500C1E93E /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305DA9701B36A38500C1E93E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		305DA95E1B36A38500C1E93E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305DA9681B36A38500C1E93E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		305DA96E1B36A38500C1E93E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				305DA9791B36A38500C1E93E /* YotaStatusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		305DA9741B36A38500C1E93E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 305DA9611B36A38500C1E93E /* YotaStatus */;
+			targetProxy = 305DA9731B36A38500C1E93E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		305DA96B1B36A38500C1E93E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				305DA96C1B36A38500C1E93E /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		305DA97A1B36A38500C1E93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		305DA97B1B36A38500C1E93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		305DA97D1B36A38500C1E93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = YotaStatus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		305DA97E1B36A38500C1E93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = YotaStatus/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		305DA9801B36A38500C1E93E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YotaStatusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YotaStatus.app/Contents/MacOS/YotaStatus";
+			};
+			name = Debug;
+		};
+		305DA9811B36A38500C1E93E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = YotaStatusTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YotaStatus.app/Contents/MacOS/YotaStatus";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		305DA95D1B36A38500C1E93E /* Build configuration list for PBXProject "YotaStatus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305DA97A1B36A38500C1E93E /* Debug */,
+				305DA97B1B36A38500C1E93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		305DA97C1B36A38500C1E93E /* Build configuration list for PBXNativeTarget "YotaStatus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305DA97D1B36A38500C1E93E /* Debug */,
+				305DA97E1B36A38500C1E93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		305DA97F1B36A38500C1E93E /* Build configuration list for PBXNativeTarget "YotaStatusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				305DA9801B36A38500C1E93E /* Debug */,
+				305DA9811B36A38500C1E93E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 305DA95A1B36A38500C1E93E /* Project object */;
+}
