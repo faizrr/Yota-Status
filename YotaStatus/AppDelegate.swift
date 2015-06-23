@@ -22,6 +22,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             button.action = Selector("togglePopover:")
         }
         popover.contentViewController = InfoViewController(nibName: "InfoViewController", bundle: nil)
+        showPopover(nil)
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {

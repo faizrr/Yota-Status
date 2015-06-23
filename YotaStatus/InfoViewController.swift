@@ -10,13 +10,11 @@ import Cocoa
 
 class InfoViewController: NSViewController {
     
+    // MARK: - Settings
+    
     @IBOutlet weak var settingsButton: NSButton!
     lazy var settingsWindow = SettingsViewController(windowNibName: "SettingsViewController")
-    let settings = NSUserDefaults.standardUserDefaults()
-    
-    var ip = ""
-    var period = 1
-    
+
     @IBAction func goToSettings(sender: AnyObject) {
         settingsWindow.showWindow(sender)
     }
@@ -25,61 +23,95 @@ class InfoViewController: NSViewController {
         NSApplication.sharedApplication().terminate(self)
     }
     
+    // MARK: - Main Interface
+    
+    @IBOutlet weak var sinr: NSTextField!
+    @IBOutlet weak var rsrp: NSTextField!
+    @IBOutlet weak var curDown: NSTextField!
+    @IBOutlet weak var curUp: NSTextField!
+    @IBOutlet weak var maxDown: NSTextField!
+    @IBOutlet weak var maxUp: NSTextField!
+    @IBOutlet weak var bytesDown: NSTextField!
+    @IBOutlet weak var bytesUp: NSTextField!
+    @IBOutlet weak var time: NSTextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if let currentip = settings.stringForKey("IP"){
-            ip = currentip
-        }
-        else {
-            settings.setObject("192.168.0.1", forKey: "IP")
-            ip = "192.168.0.1"
-        }
-        
-        if let currentperiod = settings.integerForKey("Period") as Int!{
-            period = currentperiod
-        }
-        else {
-            settings.setObject("2", forKey: "Period")
-            period = 2
-        }
-        
-        let timer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(period), target: self, selector: Selector("update"), userInfo: nil, repeats: false)
-        
-    }
-    
-    func doSmth() {
-        
+        update()
     }
     
     func update() {
-        
-        doSmth()
-        /*
-        let currentperiod = settings.integerForKey("Period")
-        let timer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(period), target: self, selector: Selector("update"), userInfo: nil, repeats: false)
-        
-        
-        /*
-        let url = NSURL(string: "http://"+ip+"/cgi-bin/sysconf.cgi?page=ajax&action=get_status&time=1434886276974")
+        let ip = SettingsData.sharedInstance.ip
+        let period = SettingsData.sharedInstance.period
+        let url = NSURL(string: "http://"+ip+"/cgi-bin/sysconf.cgi?page=ajax&action=get_status")
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
-            
-            
-            let text = String(contentsOfFile: data, encoding: NSUTF8StringEncoding, error: <#NSErrorPointer#>)
-            let lines : [String] = text.componentsSeparatedByString("\n")
-            
-            var a = 0
+            let text = String(NSString(data: data, encoding: NSUTF8StringEncoding)!)
+            let lines:[String] = text.componentsSeparatedByString("\n")
             for i in lines {
-                print(i)
-                a+=1
-                print(a)
-                println()
+                if i.hasPrefix("State=") {
+                    let t = (i as NSString).substringFromIndex(6)
+                    if t != "Connected" { break }
+                }
+                else if i.hasPrefix("3GPP.SINR=") {
+                    let t = (i as NSString).substringFromIndex(10)
+                    self.sinr.stringValue = t
+                }
+                else if i.hasPrefix("3GPP.RSRP=") {
+                    let t = (i as NSString).substringFromIndex(10)
+                    self.rsrp.stringValue = t
+                }
+                else if i.hasPrefix("MaxDownlinkThroughput=") {
+                    let t = (i as NSString).substringFromIndex(22)
+                    let n = Double(t.toInt()!) / 1000
+                    let str = NSString(format: "%.2f", n)
+                    self.maxDown.stringValue = str as String
+                }
+                else if i.hasPrefix("MaxUplinkThroughput=") {
+                    let t = (i as NSString).substringFromIndex(20)
+                    let n = Double(t.toInt()!) / 1000
+                    let str = NSString(format: "%.2f", n)
+                    self.maxUp.stringValue = str as String
+                }
+                else if i.hasPrefix("CurDownlinkThroughput=") {
+                    let t = (i as NSString).substringFromIndex(22)
+                    let n = Double(t.toInt()!) / 1000
+                    let str = NSString(format: "%.2f", n)
+                    self.curDown.stringValue = str as String
+                }
+                else if i.hasPrefix("CurUplinkThroughput=") {
+                    let t = (i as NSString).substringFromIndex(20)
+                    let n = Double(t.toInt()!) / 1000
+                    let str = NSString(format: "%.2f", n)
+                    self.curUp.stringValue = str as String
+                }
+                else if i.hasPrefix("SentBytes=") {
+                    let t = (i as NSString).substringFromIndex(10)
+                    let n = t.toInt()! / 1000000
+                    self.bytesDown.integerValue = n
+                }
+                else if i.hasPrefix("ReceivedBytes=") {
+                    let t = (i as NSString).substringFromIndex(14)
+                    let n = t.toInt()! / 1000000
+                    self.bytesUp.integerValue = n
+                }
+                else if i.hasPrefix("ConnectedTime=") {
+                    let t = (i as NSString).substringFromIndex(14)
+                    let n = t.toInt()!
+  
+                    let hours = n / 3600
+                    let minutes = (n%3600)/60
+                    let seconds = minutes % 60
+                    let str = "\(hours)ч \(minutes)м \(seconds)с"
+                    
+                    self.time.stringValue = str
+                }
             }
             
         }
         task.resume()
-        */
-*/
+        
+        let timer = NSTimer.scheduledTimerWithTimeInterval(NSTimeInterval(period), target: self, selector: Selector("update"), userInfo: nil, repeats: false)
     }
     
 }
