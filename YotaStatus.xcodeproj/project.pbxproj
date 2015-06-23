@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3045A3A01B39F59900BAEC55 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3045A39F1B39F59900BAEC55 /* README.md */; };
 		305DA9681B36A38500C1E93E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305DA9671B36A38500C1E93E /* AppDelegate.swift */; };
 		305DA96A1B36A38500C1E93E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305DA9691B36A38500C1E93E /* Images.xcassets */; };
 		305DA96D1B36A38500C1E93E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305DA96B1B36A38500C1E93E /* MainMenu.xib */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		3045A39E1B39D87900BAEC55 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		3045A39F1B39F59900BAEC55 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		305DA9621B36A38500C1E93E /* YotaStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YotaStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		305DA9661B36A38500C1E93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		305DA9671B36A38500C1E93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		305DA9641B36A38500C1E93E /* YotaStatus */ = {
 			isa = PBXGroup;
 			children = (
+				3045A39F1B39F59900BAEC55 /* README.md */,
 				305DA9671B36A38500C1E93E /* AppDelegate.swift */,
 				305DA9691B36A38500C1E93E /* Images.xcassets */,
 				305DA96B1B36A38500C1E93E /* MainMenu.xib */,
@@ -226,6 +229,7 @@
 			files = (
 				305DA98F1B39B9DB00C1E93E /* SettingsData.swift in Sources */,
 				305DA9841B36A48400C1E93E /* InfoViewController.swift in Sources */,
+				3045A3A01B39F59900BAEC55 /* README.md in Sources */,
 				305DA9681B36A38500C1E93E /* AppDelegate.swift in Sources */,
 				305DA98C1B36C61100C1E93E /* SettingsViewController.swift in Sources */,
 			);
