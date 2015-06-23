@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3045A3A01B39F59900BAEC55 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3045A39F1B39F59900BAEC55 /* README.md */; };
 		305DA9681B36A38500C1E93E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305DA9671B36A38500C1E93E /* AppDelegate.swift */; };
 		305DA96A1B36A38500C1E93E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 305DA9691B36A38500C1E93E /* Images.xcassets */; };
 		305DA96D1B36A38500C1E93E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305DA96B1B36A38500C1E93E /* MainMenu.xib */; };
 		305DA9791B36A38500C1E93E /* YotaStatusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305DA9781B36A38500C1E93E /* YotaStatusTests.swift */; };
 		305DA9841B36A48400C1E93E /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305DA9821B36A48400C1E93E /* InfoViewController.swift */; };
 		305DA9851B36A48400C1E93E /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305DA9831B36A48400C1E93E /* InfoViewController.xib */; };
-		305DA98C1B36C61100C1E93E /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305DA98A1B36C61100C1E93E /* SettingsViewController.swift */; };
-		305DA98D1B36C61100C1E93E /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 305DA98B1B36C61100C1E93E /* SettingsViewController.xib */; };
 		305DA98F1B39B9DB00C1E93E /* SettingsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305DA98E1B39B9DB00C1E93E /* SettingsData.swift */; };
+		307F318F1B39FB3700196B59 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307F318D1B39FB3700196B59 /* SettingsViewController.swift */; };
+		307F31901B39FB3700196B59 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 307F318E1B39FB3700196B59 /* SettingsViewController.xib */; };
+		307F31921B39FB5C00196B59 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 307F31911B39FB5C00196B59 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,6 @@
 
 /* Begin PBXFileReference section */
 		3045A39E1B39D87900BAEC55 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
-		3045A39F1B39F59900BAEC55 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		305DA9621B36A38500C1E93E /* YotaStatus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YotaStatus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		305DA9661B36A38500C1E93E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		305DA9671B36A38500C1E93E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,9 +41,10 @@
 		305DA9781B36A38500C1E93E /* YotaStatusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YotaStatusTests.swift; sourceTree = "<group>"; };
 		305DA9821B36A48400C1E93E /* InfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		305DA9831B36A48400C1E93E /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
-		305DA98A1B36C61100C1E93E /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
-		305DA98B1B36C61100C1E93E /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SettingsViewController.xib; path = ../SettingsViewController.xib; sourceTree = "<group>"; };
 		305DA98E1B39B9DB00C1E93E /* SettingsData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsData.swift; sourceTree = "<group>"; };
+		307F318D1B39FB3700196B59 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		307F318E1B39FB3700196B59 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		307F31911B39FB5C00196B59 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +71,7 @@
 				305DA9641B36A38500C1E93E /* YotaStatus */,
 				305DA9751B36A38500C1E93E /* YotaStatusTests */,
 				305DA9631B36A38500C1E93E /* Products */,
+				307F31911B39FB5C00196B59 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,14 +87,13 @@
 		305DA9641B36A38500C1E93E /* YotaStatus */ = {
 			isa = PBXGroup;
 			children = (
-				3045A39F1B39F59900BAEC55 /* README.md */,
 				305DA9671B36A38500C1E93E /* AppDelegate.swift */,
 				305DA9691B36A38500C1E93E /* Images.xcassets */,
 				305DA96B1B36A38500C1E93E /* MainMenu.xib */,
 				305DA9821B36A48400C1E93E /* InfoViewController.swift */,
 				305DA9831B36A48400C1E93E /* InfoViewController.xib */,
-				305DA98A1B36C61100C1E93E /* SettingsViewController.swift */,
-				305DA98B1B36C61100C1E93E /* SettingsViewController.xib */,
+				307F318D1B39FB3700196B59 /* SettingsViewController.swift */,
+				307F318E1B39FB3700196B59 /* SettingsViewController.xib */,
 				305DA98E1B39B9DB00C1E93E /* SettingsData.swift */,
 				305DA9651B36A38500C1E93E /* Supporting Files */,
 				3045A39E1B39D87900BAEC55 /* MyPlayground.playground */,
@@ -209,7 +209,7 @@
 				305DA96A1B36A38500C1E93E /* Images.xcassets in Resources */,
 				305DA9851B36A48400C1E93E /* InfoViewController.xib in Resources */,
 				305DA96D1B36A38500C1E93E /* MainMenu.xib in Resources */,
-				305DA98D1B36C61100C1E93E /* SettingsViewController.xib in Resources */,
+				307F31901B39FB3700196B59 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,11 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				307F31921B39FB5C00196B59 /* README.md in Sources */,
 				305DA98F1B39B9DB00C1E93E /* SettingsData.swift in Sources */,
 				305DA9841B36A48400C1E93E /* InfoViewController.swift in Sources */,
-				3045A3A01B39F59900BAEC55 /* README.md in Sources */,
 				305DA9681B36A38500C1E93E /* AppDelegate.swift in Sources */,
-				305DA98C1B36C61100C1E93E /* SettingsViewController.swift in Sources */,
+				307F318F1B39FB3700196B59 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
