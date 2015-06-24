@@ -58,6 +58,10 @@ class InfoViewController: NSViewController {
         let period = SettingsData.sharedInstance.period
         let url = NSURL(string: "http://"+ip+"/cgi-bin/sysconf.cgi?page=ajax&action=get_status")
         let task = NSURLSession.sharedSession().dataTaskWithURL(url!) {(data, response, error) in
+            if response == nil {
+                self.notConnected()
+            }
+            
             let text = String(NSString(data: data, encoding: NSUTF8StringEncoding)!)
             let lines:[String] = text.componentsSeparatedByString("\n")
             for i in lines {
