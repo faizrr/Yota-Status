@@ -31,7 +31,7 @@ class SettingsData {
             self.ip = currentip
         }
         else {
-            storedSettings.setObject("192.168.0.1", forKey: "IP")
+            storedSettings.setObject("status.yota.ru", forKey: "IP")
             self.ip = "192.168.0.1"
         }
         
