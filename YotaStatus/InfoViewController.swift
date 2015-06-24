@@ -35,10 +35,22 @@ class InfoViewController: NSViewController {
     @IBOutlet weak var bytesUp: NSTextField!
     @IBOutlet weak var time: NSTextField!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        notConnected()
         update()
+    }
+    
+    func notConnected() {
+        self.sinr.stringValue = "---"
+        self.rsrp.stringValue = "---"
+        self.curDown.stringValue = "---"
+        self.curUp.stringValue = "---"
+        self.maxDown.stringValue = "---"
+        self.maxUp.stringValue = "---"
+        self.bytesDown.stringValue = "---"
+        self.bytesUp.stringValue = "---"
+        self.time.stringValue = "Нет соединения"
     }
     
     func update() {
@@ -51,7 +63,10 @@ class InfoViewController: NSViewController {
             for i in lines {
                 if i.hasPrefix("State=") {
                     let t = (i as NSString).substringFromIndex(6)
-                    if t != "Connected" { break }
+                    if t != "Connected" {
+                        self.notConnected()
+                        break
+                    }
                 }
                 else if i.hasPrefix("3GPP.SINR=") {
                     let t = (i as NSString).substringFromIndex(10)
@@ -102,7 +117,7 @@ class InfoViewController: NSViewController {
                     let hours = n / 3600
                     let minutes = (n%3600)/60
                     let seconds = minutes % 60
-                    let str = "\(hours)ч \(minutes)м \(seconds)с"
+                    let str = "Время соединения: \(hours)ч \(minutes)м \(seconds)с"
                     
                     self.time.stringValue = str
                 }
