@@ -32,7 +32,7 @@ class SettingsData {
         }
         else {
             storedSettings.setObject("status.yota.ru", forKey: "IP")
-            self.ip = "192.168.0.1"
+            self.ip = "status.yota.ru"
         }
         
         if let currentperiod = storedSettings.integerForKey("Period") as Int!{
