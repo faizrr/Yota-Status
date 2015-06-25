@@ -3,7 +3,7 @@
 
 Текущая версия: **0.1.1**
 
-Загрузить заранее скомпилированный проект [можно здесь](https://yadi.sk/d/AZKIIdBGhTKPM)
+Загрузить заранее скомпилированный проект [можно здесь](https://yadi.sk/d/DI0Uc3hfhTosb)
 
 ![Screenshot](http://i.imgur.com/wzBGszd.png)
 
