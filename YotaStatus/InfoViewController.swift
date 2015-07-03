@@ -107,12 +107,12 @@ class InfoViewController: NSViewController {
                 else if i.hasPrefix("SentBytes=") {
                     let t = (i as NSString).substringFromIndex(10)
                     let n = t.toInt()! / 1000000
-                    self.bytesDown.integerValue = n
+                    self.bytesUp.integerValue = n
                 }
                 else if i.hasPrefix("ReceivedBytes=") {
                     let t = (i as NSString).substringFromIndex(14)
                     let n = t.toInt()! / 1000000
-                    self.bytesUp.integerValue = n
+                    self.bytesDown.integerValue = n
                 }
                 else if i.hasPrefix("ConnectedTime=") {
                     let t = (i as NSString).substringFromIndex(14)
